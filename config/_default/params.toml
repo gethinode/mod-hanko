@@ -8,3 +8,7 @@
         login-redirect = ""
         logout-redirect = ""
         timeout-redirect = ""
+    # [modules.hanko.csp]
+    #     connect-src = [
+    #         "" # include your endpoint here when using CSP
+    #     ]
