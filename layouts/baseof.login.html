@@ -1,0 +1,30 @@
+{{- /* Initialize module configuration */ -}}
+{{- $modules := partialCached "utilities/InitModules.html" . -}}
+{{- $.Scratch.Set "modules" $modules -}}
+
+{{- /* Define main breakpoint */ -}}
+{{- $.Scratch.Set "breakpoint" (partialCached "utilities/GetBreakpoint.html" .) }}
+
+{{- /* Define base URL */ -}}
+{{ $lang := site.LanguageCode | default site.Language.Lang }}
+{{ $.Scratch.Set "baseURL" (strings.TrimSuffix (printf "%s/" $lang) site.Home.RelPermalink) }}
+
+<!doctype html>
+<html lang="{{ .Site.Language.Lang }}" class="no-js">
+    <head>
+        {{- partial "footer/scripts.html" (dict "page" . "type" "critical") -}}
+        {{- partial "footer/scripts.html" (dict "page" . "type" "functional") -}}
+        {{ block "head" . }}{{ end -}}
+    </head>
+
+    <body>
+        <div id="container" class="main-login d-flex align-items-center bg-primary-subtle">
+            {{ block "main" . }}{{ end -}}
+        </div>
+
+        {{- partial "footer/toast-container.html" . -}}
+        {{- partial "assets/symbols.html" . -}}
+        {{- partialCached "footer/scripts.html" (dict "page" .) -}}
+        {{- partial "footer/scripts.html" (dict "page" . "type" "optional") -}}
+    </body>
+</html>

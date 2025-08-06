@@ -1,0 +1,15 @@
+{{ define "main" -}}
+    {{- $breakpoint := $.Scratch.Get "breakpoint" -}}
+
+    <div class="container-fluid p-0 d-flex align-items-center">
+        <div class="container-xxl p-4 px-xxl-0 text-center">
+            {{ $logo := "" }}
+            {{ with site.Params.navigation.logo }}
+                {{ $height := index site.Params.navigation "logo-height" | default 30 }}
+                {{ partial "assets/image.html" (dict "src" . "loading" "eager" "title" site.Title "image-height" $height "class" "py-5") }}
+            {{ end }}
+            <div class="d-flex justify-content-center align-items-center auth-placeholder"><hanko-auth /></div>
+            <div class="py-5">{{ .Site.Copyright | safeHTML }}</div>
+        </div>
+    </div>
+{{ end -}}

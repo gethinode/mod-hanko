@@ -1,15 +1,16 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
-title = 'Test site for mod-template'
+title = 'Test site for mod-hanko'
 
 [module]
-  # Build and serve using local mod-template clone declared in the named Hugo workspace:
-  workspace = "mod-template.work"
+  # Build and serve using local mod-hanko clone declared in the named Hugo workspace:
+  workspace = "mod-hanko.work"
   [[module.imports]]
-    path = "github.com/gethinode/mod-template"
-  [[module.imports.mounts]]
-    source = "dist"
-    target = "static"
-  [[module.imports.mounts]]
-    source = "layouts"
-    target = "layouts"
+    path = "github.com/gethinode/mod-hanko"
+
+[params.modules.hanko]
+    integration = "core"
+    # update endpoint with http://localhost:1313 as allowed origin for actual testing
+    endpoint = "https://login.cloud.hanko.io" 
+    login-redirect = "/"
+    logout-redirect = "/login/"

@@ -1,7 +1,7 @@
 {
-  "name": "@gethinode/mod-template",
+  "name": "@gethinode/mod-hanko",
   "version": "0.0.0-semantically-released",
-  "description": "A template to define a Hugo module compatible with Hinode",
+  "description": "A Hugo module to add authentication powered by Hanko to your Hinode site",
   "keywords": [
     "hugo",
     "module"
@@ -21,14 +21,14 @@
     "mod:update": "rimraf _vendor && hugo mod get -u ./... && hugo mod get -u && npm run -s mod:vendor && npm run -s mod:tidy",
     "mod:tidy": "hugo mod tidy",
     "mod:vendor": "rimraf _vendor && hugo mod vendor",
-    "postinstall": "echo TODO: add postinstall instructions",
+    "postinstall": "cpy node_modules/@teamhanko/hanko-elements/dist/elements.js dist --flat",
     "test": "npm run -s build",
     "upgrade": "npx npm-check-updates -u && npm run -s mod:update",
     "prepare": "node .husky/install.mjs"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gethinode/mod-template.git"
+    "url": "git+https://github.com/gethinode/mod-hanko.git"
   },
   "author": "Mark Dumay",
   "license": "MIT",
@@ -41,6 +41,7 @@
     "@commitlint/config-conventional": "^19.8.1",
     "@semantic-release/exec": "^7.1.0",
     "@semantic-release/git": "^10.0.1",
+    "@teamhanko/hanko-elements": "^2.1.0",
     "commitizen": "^4.3.1",
     "cpy-cli": "^5.0.0",
     "cz-conventional-changelog": "^3.3.0",

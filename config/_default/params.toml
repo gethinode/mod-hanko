@@ -1,0 +1,9 @@
+
+# default configuration for Hanko
+
+[modules]
+    [modules.hanko]
+        integration = "core"
+        endpoint = ""
+        login-redirect = ""
+        logout-redirect = ""
