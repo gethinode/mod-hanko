@@ -76,3 +76,7 @@ hanko-auth::part(container), hanko-profile::part(container) {
 .hanko-dialog {
     border-radius: $theme-border-radius;
 }
+
+.auth-placeholder {
+    min-height: 400px;
+}
