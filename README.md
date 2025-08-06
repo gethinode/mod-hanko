@@ -40,6 +40,16 @@ This module uses [semantic-release][semantic-release] to automate the release of
 
 ## Configuration
 
+A login template is available in the `layouts` folder, which is automatically mounted into your site. You can reference this template by setting `layout: login` in the frontmatter of your content page. For example, create a login page `content/login.md` with the following content.
+
+```yml
+---
+title: Login
+description: Login page
+layout: login
+---
+```
+
 This module supports the following parameters (see the section `params.modules` in `config.toml`):
 
 | Setting                   | Default | Description |
