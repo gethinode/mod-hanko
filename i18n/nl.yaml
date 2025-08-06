@@ -1,0 +1,6 @@
+- id: ui_profile
+  translation: "Gebruikersprofiel"
+- id: ui_logout
+  translation: "Uitloggen"
+- id: ui_expired
+  translation: "Je sessie is verlopen. Log opnieuw in."
