@@ -72,3 +72,7 @@ hanko-auth::part(container), hanko-profile::part(container) {
 .main-login {
     min-height: 100vh;
 }
+
+.hanko-dialog {
+    border-radius: $theme-border-radius;
+}

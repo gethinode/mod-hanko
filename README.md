@@ -47,7 +47,7 @@ This module supports the following parameters (see the section `params.modules` 
 | endpoint                  |         | Hanko API URL, such as `https://f4****-4802-49ad-8e0b-3d3****ab32.hanko.io`. Check the [Hanko console](https://cloud.hanko.io/) to retrieve the value. |
 | login-redirect            |         | Redirect destination after a successful login, e.g. `/` to redirect to the site's homepage. |
 | logout-redirect           |         | Redirect destination after a successful logout, e.g. `/login/` to redirect to the login page. |
-| timeout-redirect          |         | Redirect destination when the session has expired, e.g. `/login/` to redirect to the login page. |
+| timeout-redirect          |         | Redirect destination when the session has expired, e.g. `/login/` to redirect to the login page. A modal dialog is shown to confirm the redirect. |
 
 <!-- MARKDOWN LINKS -->
 [hugo]: https://gohugo.io
