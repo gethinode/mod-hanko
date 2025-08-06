@@ -1,0 +1,6 @@
+- id: ui_profile
+  translation: "User profile"
+- id: ui_logout
+  translation: "Logout"
+- id: ui_expired
+  translation: "Your session has expired. Please sign in again."
