@@ -7,3 +7,4 @@
         endpoint = ""
         login-redirect = ""
         logout-redirect = ""
+        timeout-redirect = ""
