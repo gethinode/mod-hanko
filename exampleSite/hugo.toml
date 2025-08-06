@@ -10,6 +10,7 @@ title = 'Test site for mod-hanko'
 
 [params.modules.hanko]
     integration = "core"
+    category = "necessary"
     # update endpoint with http://localhost:1313 as allowed origin for actual testing
     endpoint = "https://login.cloud.hanko.io" 
     login-redirect = "/"
