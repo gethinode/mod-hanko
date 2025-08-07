@@ -1,0 +1,4 @@
+github.com/gethinode/mod-hanko v1.1.1 h1:GqAmVBEq+aB0lMTuxGHvYgvuX4wUODLrMt6x/Ngcd8s=
+github.com/gethinode/mod-hanko v1.1.1/go.mod h1:RCYZk2BRTeUHaWDYBh5z8DvtG2s2oGRnpqvKalBrHjU=
+github.com/gethinode/mod-utils/v4 v4.13.0 h1:VKAA+wKy4saayXfgJuVBRfhNVWQWmxOjO8LSpQCvLfw=
+github.com/gethinode/mod-utils/v4 v4.13.0/go.mod h1:bYmvRdAo4ICy5MpSGafDvO4p5bTDpsDKFCPL3bH0mN4=
