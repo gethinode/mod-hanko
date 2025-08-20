@@ -1,14 +1,13 @@
 hanko-auth,
+hanko-login,
 hanko-profile {
   /* Color Scheme */
   --color: var(--bs-body-color);
   --color-shade-1: #8f9095;
   --color-shade-2: #e5e6ef;
-
   --brand-color: #{$primary};
   --brand-color-shade-1: #{$primary};
   --brand-contrast-color: var(--bs-body-bg);
-
   --background-color: var(--bs-body-bg);
   --error-color: #{$danger};
   --link-color: #{$primary};
@@ -35,7 +34,6 @@ hanko-profile {
   --headline1-font-size: 24px;
   --headline1-font-weight: 600;
   --headline1-margin: 0 0 1rem;
-
   --headline2-font-size: 16px;
   --headline2-font-weight: 600;
   --headline2-margin: 1rem 0 0.5rem;
@@ -58,6 +56,7 @@ hanko-profile {
 @if $enable-dark-mode {
     @include color-mode(dark) {
         hanko-auth,
+        hanko-login,
         hanko-profile {
             --link-color: #{$primary-text-emphasis-dark};
             --brand-contrast-color: var(--bs-body-color);
@@ -65,7 +64,7 @@ hanko-profile {
     }
 }
 
-hanko-auth::part(container), hanko-profile::part(container) {
+hanko-auth::part(container), hanko-login::part(container), hanko-profile::part(container) {
     border-radius: $theme-border-radius;
 }
 
@@ -75,4 +74,8 @@ hanko-auth::part(container), hanko-profile::part(container) {
 
 .hanko-dialog {
     border-radius: $theme-border-radius;
+}
+
+.auth-placeholder {
+    min-height: 400px;
 }

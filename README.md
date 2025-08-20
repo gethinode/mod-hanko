@@ -40,6 +40,18 @@ This module uses [semantic-release][semantic-release] to automate the release of
 
 ## Configuration
 
+A login template is available in the `layouts` folder, which is automatically mounted into your site. You can reference this template by setting `layout: login` in the frontmatter of your content page. When the parameter `authenticate` is set to true, the login page will include the [Hanko Auth Component](https://docs.hanko.io/guides/hanko-elements/auth-component). The [Login Component](https://docs.hanko.io/guides/hanko-elements/login-component) is included instead. For example, create a login page `content/login.md` with the following content.
+
+```yml
+---
+title: Login
+description: Login page
+layout: login
+params:
+  authenticate: false
+---
+```
+
 This module supports the following parameters (see the section `params.modules` in `config.toml`):
 
 | Setting                   | Default | Description |
@@ -48,6 +60,15 @@ This module supports the following parameters (see the section `params.modules` 
 | login-redirect            |         | Redirect destination after a successful login, e.g. `/` to redirect to the site's homepage. |
 | logout-redirect           |         | Redirect destination after a successful logout, e.g. `/login/` to redirect to the login page. |
 | timeout-redirect          |         | Redirect destination when the session has expired, e.g. `/login/` to redirect to the login page. A modal dialog is shown to confirm the redirect. |
+
+When using Content Security Policies, be sure to add the endpoint to the `connect-src` safelist. For example, the following configuration in your site parameters will enable connections to the example Hanko API URL.
+
+```toml
+[modules.hanko.csp]
+    connect-src = [
+        "f4****-4802-49ad-8e0b-3d3****ab32.hanko.io"
+    ]
+```
 
 <!-- MARKDOWN LINKS -->
 [hugo]: https://gohugo.io
