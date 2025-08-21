@@ -7,12 +7,12 @@
             {{ $logo := "" }}
             {{ with site.Params.navigation.logo }}
                 {{ $height := index site.Params.navigation "logo-height" | default 30 }}
-                {{ partial "assets/image.html" (dict "src" . "loading" "eager" "title" site.Title "image-height" $height "class" "py-5") }}
+                {{ partial "assets/image.html" (dict "src" . "loading" "eager" "title" site.Title "image-height" $height "class" "pt-5") }}
             {{ end }}
             <div class="d-flex justify-content-center align-items-center auth-placeholder">
                 {{ if $authenticate }}<hanko-auth />{{ else }}<hanko-login />{{ end }}
             </div>
-            <div class="py-5">{{ .Site.Copyright | safeHTML }}</div>
+            <div class="pb-5">{{ .Site.Copyright | safeHTML }}</div>
         </div>
     </div>
 {{ end -}}
