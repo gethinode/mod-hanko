@@ -4,3 +4,5 @@
   translation: "Logout"
 - id: ui_expired
   translation: "Your session has expired. Please sign in again."
+- id: close
+  translation: "Close"
