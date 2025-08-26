@@ -4,3 +4,5 @@
   translation: "Uitloggen"
 - id: ui_expired
   translation: "Je sessie is verlopen. Log opnieuw in."
+- id: close
+  translation: "Sluiten"
