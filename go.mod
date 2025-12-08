@@ -1,5 +1,7 @@
-module github.com/gethinode/mod-hanko
+module github.com/gethinode/mod-hanko/v2
 
 go 1.19
 
-require github.com/gethinode/mod-utils/v4 v4.21.5 // indirect
+require (
+	github.com/gethinode/mod-utils/v5 v5.0.0 // indirect
+)
