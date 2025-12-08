@@ -6,7 +6,7 @@ title = 'Test site for mod-hanko'
   # Build and serve using local mod-hanko clone declared in the named Hugo workspace:
   workspace = "mod-hanko.work"
   [[module.imports]]
-    path = "github.com/gethinode/mod-hanko"
+    path = "github.com/gethinode/mod-hanko/v2"
 
 [params.modules.hanko]
     integration = "core"

@@ -34,3 +34,5 @@ github.com/gethinode/mod-utils/v4 v4.21.3 h1:F6pyHbgGzL1FGEV66j8T4hDg3a80cJ/PgPs
 github.com/gethinode/mod-utils/v4 v4.21.3/go.mod h1:bYmvRdAo4ICy5MpSGafDvO4p5bTDpsDKFCPL3bH0mN4=
 github.com/gethinode/mod-utils/v4 v4.21.5 h1:X3dxeBGDpFCsFcqk21l6eWtUYYGIQcExvHnlOQnvR04=
 github.com/gethinode/mod-utils/v4 v4.21.5/go.mod h1:bYmvRdAo4ICy5MpSGafDvO4p5bTDpsDKFCPL3bH0mN4=
+github.com/gethinode/mod-utils/v4 v4.21.6 h1:txvb0yHA9aIhP4IEHmxzAt3hpeuAJZZDIfCmjLpzBuI=
+github.com/gethinode/mod-utils/v4 v4.21.6/go.mod h1:bYmvRdAo4ICy5MpSGafDvO4p5bTDpsDKFCPL3bH0mN4=
