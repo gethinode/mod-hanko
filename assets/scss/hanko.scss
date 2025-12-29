@@ -62,6 +62,15 @@ hanko-profile {
         hanko-profile {
             --link-color: #{$primary-text-emphasis-dark};
             --brand-contrast-color: var(--bs-body-color);
+
+            &::part(primary-button):hover {
+                background-color: var(--bs-primary);
+                color: var(--bs-body-bg);
+            }
+
+            &::part(secondary-button):hover {
+                background-color: var(--bs-tertiary-bg);
+            }
         }
     }
 }
