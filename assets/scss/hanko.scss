@@ -52,6 +52,10 @@ hanko-profile {
 
     /* Button Styles */
     --button-min-width: max-content;
+
+    &::part(primary-button):hover {
+        background-color: shade-color($primary, $btn-hover-bg-shade-amount);
+    }
 }
 
 @if $enable-dark-mode {
