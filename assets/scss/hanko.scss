@@ -2,56 +2,56 @@ hanko-auth,
 hanko-dialog,
 hanko-login,
 hanko-profile {
-  /* Color Scheme */
-  --color: var(--bs-body-color);
-  --color-shade-1: #8f9095;
-  --color-shade-2: #e5e6ef;
-  --brand-color: #{$primary};
-  --brand-color-shade-1: #{$primary};
-  --brand-contrast-color: var(--bs-body-bg);
-  --background-color: var(--bs-body-bg);
-  --error-color: #{$danger};
-  --link-color: #{$primary};
+    /* Color Scheme */
+    --color: var(--bs-body-color);
+    --color-shade-1: #8f9095;
+    --color-shade-2: #e5e6ef;
+    --brand-color: #{$primary};
+    --brand-color-shade-1: #{$primary};
+    --brand-contrast-color: var(--bs-body-bg);
+    --background-color: var(--bs-body-bg);
+    --error-color: #{$danger};
+    --link-color: #{$primary};
 
-  /* Font Styles */
-  --font-weight: $font-weight-normal;
-  --font-size: $font-size-base;
-  --font-family: $font-family-sans-serif;
+    /* Font Styles */
+    --font-weight: $font-weight-normal;
+    --font-size: $font-size-base;
+    --font-family: $font-family-sans-serif;
 
-  /* Border Styles */
-  --border-radius: #{$theme-border-radius};
-  --border-style: solid;
-  --border-width: 1px;
+    /* Border Styles */
+    --border-radius: #{$theme-border-radius};
+    --border-style: solid;
+    --border-width: 1px;
 
-  /* Item Styles */
-  --item-height: 34px;
-  --item-margin: 0.5rem 0;
+    /* Item Styles */
+    --item-height: 34px;
+    --item-margin: 0.5rem 0;
 
-  /* Container Styles */
-  --container-padding: 30px;
-  --container-max-width: 410px;
+    /* Container Styles */
+    --container-padding: 30px;
+    --container-max-width: 410px;
 
-  /* Headline Styles */
-  --headline1-font-size: 24px;
-  --headline1-font-weight: 600;
-  --headline1-margin: 0 0 1rem;
-  --headline2-font-size: 16px;
-  --headline2-font-weight: 600;
-  --headline2-margin: 1rem 0 0.5rem;
+    /* Headline Styles */
+    --headline1-font-size: 24px;
+    --headline1-font-weight: 600;
+    --headline1-margin: 0 0 1rem;
+    --headline2-font-size: 16px;
+    --headline2-font-weight: 600;
+    --headline2-margin: 1rem 0 0.5rem;
 
-  /* Divider Styles */
-  --divider-padding: 0 42px;
-  --divider-visibility: visible;
+    /* Divider Styles */
+    --divider-padding: 0 42px;
+    --divider-visibility: visible;
 
-  /* Link Styles */
-  --link-text-decoration: none;
-  --link-text-decoration-hover: underline;
+    /* Link Styles */
+    --link-text-decoration: none;
+    --link-text-decoration-hover: underline;
 
-  /* Input Styles */
-  --input-min-width: 14em;
+    /* Input Styles */
+    --input-min-width: 14em;
 
-  /* Button Styles */
-  --button-min-width: max-content;
+    /* Button Styles */
+    --button-min-width: max-content;
 }
 
 @if $enable-dark-mode {
