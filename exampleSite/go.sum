@@ -12,6 +12,8 @@ github.com/gethinode/mod-hanko/v2 v2.0.0 h1:9q1aXbd7rmqD/aW/Tjszvv0AwYjtt+r5U9Bf
 github.com/gethinode/mod-hanko/v2 v2.0.0/go.mod h1:LbTSWIhSIBk3OJzZ1fHhk2Xhmo+78/9pyY5yfDkMp90=
 github.com/gethinode/mod-hanko/v2 v2.0.1 h1:sajQiwHfr6BWenKJzQn2JmstXk0qD8VIUrzcccj7F5o=
 github.com/gethinode/mod-hanko/v2 v2.0.1/go.mod h1:PFPr01ZeJqXkSDASyADJ9TqAonjU8aKzY7Dl9PhFPQM=
+github.com/gethinode/mod-hanko/v2 v2.0.2 h1:n77zi1xGbgNwJuhxmZEoDqktyTcIZ/gkzFp9StrpUTM=
+github.com/gethinode/mod-hanko/v2 v2.0.2/go.mod h1:PFPr01ZeJqXkSDASyADJ9TqAonjU8aKzY7Dl9PhFPQM=
 github.com/gethinode/mod-utils/v4 v4.13.0 h1:VKAA+wKy4saayXfgJuVBRfhNVWQWmxOjO8LSpQCvLfw=
 github.com/gethinode/mod-utils/v4 v4.13.0/go.mod h1:bYmvRdAo4ICy5MpSGafDvO4p5bTDpsDKFCPL3bH0mN4=
 github.com/gethinode/mod-utils/v4 v4.13.1 h1:Zt9xQQgcb3xA0rrYgVD5ZO3idMAXATfirrF9BmLtR30=
