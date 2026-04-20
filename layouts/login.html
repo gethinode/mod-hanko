@@ -1,6 +1,7 @@
 {{ define "main" -}}
     {{- $breakpoint := $.Scratch.Get "breakpoint" -}}
     {{- $authenticate := .Page.Params.authenticate | default true }}
+    {{- $tagName := cond $authenticate "hanko-auth" "hanko-login" -}}
 
     <div class="container-fluid p-0 d-flex align-items-center">
         <div class="container-xxl p-4 px-xxl-0 text-center">
@@ -9,8 +10,12 @@
                 {{ $height := index site.Params.navigation "logo-height" | default 30 }}
                 {{ partial "assets/image.html" (dict "src" . "loading" "eager" "title" site.Title "image-height" $height "class" "pt-5") }}
             {{ end }}
-            <div class="d-flex justify-content-center align-items-center auth-placeholder">
+            <div id="auth-placeholder" class="d-flex justify-content-center align-items-center auth-placeholder" data-auth-tag="{{ $tagName }}">
                 {{ if $authenticate }}<hanko-auth />{{ else }}<hanko-login />{{ end }}
+            </div>
+            <div id="auth-fallback" class="pt-3" hidden>
+                <p class="mb-1">{{ i18n "ui_login_waking" }}</p>
+                <p class="text-muted small mb-0">{{ i18n "ui_login_retry_hint" }}</p>
             </div>
             <div class="pb-5">{{ .Site.Copyright | safeHTML }}</div>
         </div>

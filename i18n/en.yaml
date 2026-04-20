@@ -4,5 +4,9 @@
   translation: "Logout"
 - id: ui_expired
   translation: "Your session has expired. Please sign in again."
+- id: ui_login_waking
+  translation: "Waking up the service…"
+- id: ui_login_retry_hint
+  translation: "This may take up to 30 seconds on first visit. Retrying automatically…"
 - id: close
   translation: "Close"

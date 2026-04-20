@@ -4,5 +4,9 @@
   translation: "Uitloggen"
 - id: ui_expired
   translation: "Je sessie is verlopen. Log opnieuw in."
+- id: ui_login_waking
+  translation: "Service wordt gestart…"
+- id: ui_login_retry_hint
+  translation: "Dit kan bij een eerste bezoek tot 30 seconden duren. De pagina wordt automatisch herladen…"
 - id: close
   translation: "Sluiten"
