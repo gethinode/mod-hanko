@@ -70,6 +70,33 @@ When using Content Security Policies, be sure to add the endpoint to the `connec
     ]
 ```
 
+## Session Lifecycle Events
+
+The module dispatches `CustomEvent` notifications on `document` at key
+points in the Hanko session lifecycle so consumers can run additional
+cleanup or bootstrap logic without forking the module. All events are
+non-cancelable and carry no `detail` payload — listeners are notifications,
+not interceptors. Any async work a listener kicks off (`fetch` with
+`keepalive`, etc.) must outlive the subsequent redirect on its own.
+
+| Event                  | Fires when                                                                 |
+|------------------------|----------------------------------------------------------------------------|
+| `hanko:sessionCreated` | A new Hanko session was established, before redirect to `login-redirect`.  |
+| `hanko:sessionExpired` | The session has expired, before the timeout modal is rendered.             |
+| `hanko:beforeLogout`   | The user clicked `#logout-link`, before `hanko.user.logout()` is invoked.  |
+| `hanko:afterLogout`    | Hanko reports a successful logout, before redirect to `logout-redirect`.   |
+
+Example — flushing site-specific cookies on logout:
+
+```js
+document.addEventListener('hanko:beforeLogout', () => {
+    fetch('/your-app/logout', { method: 'POST', keepalive: true })
+})
+document.addEventListener('hanko:sessionExpired', () => {
+    fetch('/your-app/logout', { method: 'POST', keepalive: true })
+})
+```
+
 <!-- MARKDOWN LINKS -->
 [hugo]: https://gohugo.io
 [hinode_docs]: https://gethinode.com
