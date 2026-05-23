@@ -91,6 +91,11 @@ hanko-auth::part(container), hanko-dialog::part(container), hanko-login::part(co
     border-radius: $theme-border-radius;
 }
 
+.modal:has(hanko-auth, hanko-dialog, hanko-login, hanko-profile) {
+    --#{$prefix}modal-border-radius: #{$theme-border-radius};
+    --#{$prefix}modal-inner-border-radius: #{$theme-border-radius};
+}
+
 .auth-placeholder {
     min-height: 400px;
 }
