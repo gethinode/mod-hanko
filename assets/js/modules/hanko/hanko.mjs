@@ -42,7 +42,7 @@ if (logoutLink !== null) {
   logoutLink.addEventListener('click', (event) => {
     event.preventDefault()
     dispatchHankoEvent('hanko:beforeLogout')
-    hanko.user.logout()
+    hanko.logout()
   })
 }
 
