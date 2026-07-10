@@ -24,6 +24,8 @@ github.com/gethinode/mod-hanko/v2 v2.2.2 h1:SHQRaZ97yqjk97UHWnZEEbKkYDdDvd2uxt/G
 github.com/gethinode/mod-hanko/v2 v2.2.2/go.mod h1:m1JuyKyjbxxDdsoM7ioViAuwhzih2QO/WTiRJbqC0Bc=
 github.com/gethinode/mod-hanko/v2 v2.2.3 h1:h+mWJZv7pD2gs92GmR0GOp37t3EHvlfo9O+2cUY09mU=
 github.com/gethinode/mod-hanko/v2 v2.2.3/go.mod h1:m1JuyKyjbxxDdsoM7ioViAuwhzih2QO/WTiRJbqC0Bc=
+github.com/gethinode/mod-hanko/v2 v2.2.4 h1:cKv46W7DBB41G0iLHXDbTtHN9reM+AbQhakjqKGAO+Y=
+github.com/gethinode/mod-hanko/v2 v2.2.4/go.mod h1:m1JuyKyjbxxDdsoM7ioViAuwhzih2QO/WTiRJbqC0Bc=
 github.com/gethinode/mod-utils/v4 v4.13.0 h1:VKAA+wKy4saayXfgJuVBRfhNVWQWmxOjO8LSpQCvLfw=
 github.com/gethinode/mod-utils/v4 v4.13.0/go.mod h1:bYmvRdAo4ICy5MpSGafDvO4p5bTDpsDKFCPL3bH0mN4=
 github.com/gethinode/mod-utils/v4 v4.13.1 h1:Zt9xQQgcb3xA0rrYgVD5ZO3idMAXATfirrF9BmLtR30=
@@ -114,3 +116,5 @@ github.com/gethinode/mod-utils/v5 v5.23.1 h1:Y6c+039rk8vA2m4t739osgDrXbQe3SHX9mF
 github.com/gethinode/mod-utils/v5 v5.23.1/go.mod h1:PwQN4oOjA6k/vet11JueJ9asZMgL0DBa3jyS9tPkBWU=
 github.com/gethinode/mod-utils/v5 v5.23.2 h1:d89TkxTYeOVFdOpCtESmnXE7hQs53zxCwAIes4yNu1E=
 github.com/gethinode/mod-utils/v5 v5.23.2/go.mod h1:PwQN4oOjA6k/vet11JueJ9asZMgL0DBa3jyS9tPkBWU=
+github.com/gethinode/mod-utils/v5 v5.23.3 h1:ifcDyTYpmM6HBzc6SbpG+hJMSCfGTZKf/plgjVW2qZ4=
+github.com/gethinode/mod-utils/v5 v5.23.3/go.mod h1:PwQN4oOjA6k/vet11JueJ9asZMgL0DBa3jyS9tPkBWU=
