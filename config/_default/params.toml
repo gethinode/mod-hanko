@@ -8,6 +8,11 @@
         login-redirect = ""
         logout-redirect = ""
         timeout-redirect = ""
+
+        # esbuild externals for this module's bundled scripts. hanko-elements.min.mjs
+        # is a real static file (mounted from dist/) that the browser resolves at
+        # runtime; esbuild must leave the self-import in hanko.mjs alone.
+        externals = ["/js/hanko-elements.min.mjs"]
     # [modules.hanko.csp]
     #     connect-src = [
     #         "" # include your endpoint here when using CSP
