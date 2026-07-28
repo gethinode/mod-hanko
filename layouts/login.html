@@ -8,7 +8,7 @@
             {{ $logo := "" }}
             {{ with site.Params.navigation.logo }}
                 {{ $height := index site.Params.navigation "logo-height" | default 30 }}
-                {{ partial "assets/image.html" (dict "src" . "loading" "eager" "title" site.Title "image-height" $height "class" "pt-5") }}
+                {{ partial "assets/image.html" (dict "page" $ "src" . "loading" "eager" "title" site.Title "image-height" $height "class" "pt-5") }}
             {{ end }}
             <div id="auth-placeholder" class="d-flex justify-content-center align-items-center auth-placeholder" data-auth-tag="{{ $tagName }}">
                 {{ if $authenticate }}<hanko-auth />{{ else }}<hanko-login />{{ end }}
