@@ -23,7 +23,7 @@
     "mod:tidy": "hugo mod tidy",
     "mod:vendor": "rimraf _vendor && hugo mod vendor",
     "postinstall": "cpy node_modules/@teamhanko/hanko-elements/dist/elements.js dist --flat",
-    "test": "pnpm build",
+    "test": "node test/cookie-domain.test.mjs && pnpm build",
     "upgrade": "pnpm dlx npm-check-updates -u && pnpm mod:update",
     "prepare": "node .husky/install.mjs"
   },
