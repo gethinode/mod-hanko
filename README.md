@@ -60,6 +60,7 @@ This module supports the following parameters (see the section `params.modules` 
 | login-redirect            |         | Redirect destination after a successful login, e.g. `/` to redirect to the site's homepage. |
 | logout-redirect           |         | Redirect destination after a successful logout, e.g. `/login/` to redirect to the login page. |
 | timeout-redirect          |         | Redirect destination when the session has expired, e.g. `/login/` to redirect to the login page. A modal dialog is shown to confirm the redirect. |
+| cookie-domain             |         | Parent domain for the session cookie, prefixed with a dot, so one sign-in covers every subdomain under it, e.g. `.example.com` to share a session between `app.example.com` and `docs.example.com`. Empty keeps the cookie scoped to the host that created it. The domain is applied only when the page is served from within it, so the same build still signs in on `localhost`. Register each subdomain as an allowed origin in the Hanko console. |
 
 When using Content Security Policies, be sure to add the endpoint to the `connect-src` safelist. For example, the following configuration in your site parameters will enable connections to the example Hanko API URL.
 

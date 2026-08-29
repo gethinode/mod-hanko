@@ -9,6 +9,14 @@
         logout-redirect = ""
         timeout-redirect = ""
 
+        # Parent domain for the session cookie, prefixed with a dot, so one
+        # sign-in covers every subdomain under it (e.g. ".example.com" shares a
+        # session between app.example.com and docs.example.com). Empty keeps the
+        # cookie scoped to the host that created it, which is the SDK's default.
+        # Applied only when the page is served from within the domain, so a
+        # single build still signs in on localhost.
+        cookie-domain = ""
+
         # esbuild externals for this module's bundled scripts. hanko-elements.min.mjs
         # is a real static file (mounted from dist/) that the browser resolves at
         # runtime; esbuild must leave the self-import in hanko.mjs alone.
