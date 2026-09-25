@@ -4,5 +4,5 @@ go 1.19
 
 require (
 	github.com/gethinode/mod-hanko/v3 v3.1.0 // indirect
-	github.com/gethinode/mod-utils/v6 v6.14.1 // indirect
+	github.com/gethinode/mod-utils/v6 v6.15.0 // indirect
 )
