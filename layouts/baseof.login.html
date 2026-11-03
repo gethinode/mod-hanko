@@ -6,7 +6,13 @@
 {{- $.Scratch.Set "breakpoint" (partialCached "utilities/GetBreakpoint.html" .) }}
 
 {{- /* Define base URL */ -}}
-{{ $lang := site.LanguageCode | default site.Language.Lang }}
+{{- /* Hugo renamed `languageCode` to `locale` in v0.158.0; read whichever one the running version supports. */ -}}
+{{- $lang := "" -}}
+{{- if le (hugo.Version.Compare "0.158.0") 0 -}}
+    {{- $lang = site.Language.Locale | default site.Language.Lang -}}
+{{- else -}}
+    {{- $lang = site.LanguageCode | default site.Language.Lang -}}
+{{- end }}
 {{ $.Scratch.Set "baseURL" (strings.TrimSuffix (printf "%s/" $lang) site.Home.RelPermalink) }}
 
 <!doctype html>
