@@ -21,8 +21,8 @@ importers:
         specifier: ^11.0.1
         version: 11.0.1(semantic-release@26.0.1)
       '@teamhanko/hanko-elements':
-        specifier: ^3.1.0
-        version: 3.1.0
+        specifier: ^3.2.0
+        version: 3.2.0
       cpy-cli:
         specifier: ^7.0.0
         version: 7.0.0
@@ -315,11 +315,11 @@ packages:
     resolution: {integrity: sha512-tlqY9xq5ukxTUZBmoOp+m61cqwQD5pHJtFY3Mn8CA8ps6yghLH/Hw8UPdqg4OLmFW3IFlcXnQNmo/dh8HzXYIQ==}
     engines: {node: '>=18'}
 
-  '@teamhanko/hanko-elements@3.1.0':
-    resolution: {integrity: sha512-8e9/JfGAwjZURKchaJuLKhQy3ah5MKH0knwZk3NN5gLrN/WE9M3Daj1IK7iSqgUpuCX6g5QWLXM34+gw5iw/Hg==}
+  '@teamhanko/hanko-elements@3.2.0':
+    resolution: {integrity: sha512-YzI7BZrk8D7HV6QEw1QusRSZTG79S+sWp6HLCaQ+23T3pCbairMuiISsNIvyZywqz30cpognwNeNCXgRgaQwSg==}
 
-  '@teamhanko/hanko-frontend-sdk@3.1.0':
-    resolution: {integrity: sha512-f4pbuhHC3dJKIv9JRH2MBW01SvFjGEi55bWrt3q7RitQuRL8suj3ZV3sdsCwfLB4i/sFBM54Ma6+ELWZG0klsg==}
+  '@teamhanko/hanko-frontend-sdk@3.2.0':
+    resolution: {integrity: sha512-I4rsFwXVFlH+kP/851O+RYK5WLoYLs14zbylQh/8ReSW/45OrbkdM6bh8YREkLNz10STKQOrx7l+BEJ6i0jjNA==}
 
   '@teamhanko/preact-custom-element@4.2.2':
     resolution: {integrity: sha512-3djCQr25IxQIgpidxD8J0fTQ7/hMuoa5Nmv7delQc6sX4kXgv9e/pE01cywpmGZLi69H1KUH4dmZ4cPPJQrsQQ==}
@@ -390,6 +390,10 @@ packages:
 
   argue-cli@3.2.0:
     resolution: {integrity: sha512-VipTB0gXgGIFO2Rg9yEVN5wLt2AurJcZqDbgmYSwPwsykhLrQhs240/bfceev4w68lI8JshoOJIk9uW7tFzROw==}
+    engines: {node: '>=22'}
+
+  argue-cli@3.2.1:
+    resolution: {integrity: sha512-h8QG03KSAympQnbZe0k5h/mnQCCkoKO9rVQ0L+F99+NNTV4vm18Lq70WwIKE0aLN3mM1EUf42l960bl6Dd0jOw==}
     engines: {node: '>=22'}
 
   argv-formatter@1.0.0:
@@ -2012,17 +2016,17 @@ snapshots:
 
   '@sindresorhus/merge-streams@4.0.0': {}
 
-  '@teamhanko/hanko-elements@3.1.0':
+  '@teamhanko/hanko-elements@3.2.0':
     dependencies:
       '@denysvuika/preact-translate': 0.6.0(preact@10.29.8)
-      '@teamhanko/hanko-frontend-sdk': 3.1.0
+      '@teamhanko/hanko-frontend-sdk': 3.2.0
       '@teamhanko/preact-custom-element': 4.2.2(preact@10.29.8)
       classnames: 2.5.1
       preact: 10.29.8
     transitivePeerDependencies:
       - preact-render-to-string
 
-  '@teamhanko/hanko-frontend-sdk@3.1.0':
+  '@teamhanko/hanko-frontend-sdk@3.2.0':
     dependencies:
       '@types/js-cookie': 3.0.6
 
@@ -2085,6 +2089,8 @@ snapshots:
   argparse@3.0.4: {}
 
   argue-cli@3.2.0: {}
+
+  argue-cli@3.2.1: {}
 
   argv-formatter@1.0.0: {}
 
@@ -2201,7 +2207,7 @@ snapshots:
   conventional-commits-parser@7.1.4:
     dependencies:
       '@simple-libs/stream-utils': 2.0.0
-      argue-cli: 3.2.0
+      argue-cli: 3.2.1
 
   convert-hrtime@5.0.0: {}
 
